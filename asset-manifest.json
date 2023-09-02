@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/iPortFolio/static/css/main.38e6bfa5.css",
+    "main.js": "/iPortFolio/static/js/main.7120bbae.js",
+    "static/js/787.ca84a7e5.chunk.js": "/iPortFolio/static/js/787.ca84a7e5.chunk.js",
+    "static/media/drdharabhatt.png": "/iPortFolio/static/media/drdharabhatt.bf958c78a81d6c489736.png",
+    "static/media/profileimg.png": "/iPortFolio/static/media/profileimg.ee77dbd3f62438eb109a.png",
+    "static/media/avidorganics.png": "/iPortFolio/static/media/avidorganics.26a7ef5ccefc3b5a1a3d.png",
+    "static/media/thecafemasala.png": "/iPortFolio/static/media/thecafemasala.41644e73f22697222b4e.png",
+    "static/media/1life.png": "/iPortFolio/static/media/1life.368848434100df1745b4.png",
+    "static/media/baggsinc.png": "/iPortFolio/static/media/baggsinc.0f520e176588b1ad7213.png",
+    "static/media/designmaxinteriors.png": "/iPortFolio/static/media/designmaxinteriors.41dcc583e95b18f90ca4.png",
+    "static/media/alembicaustralia.png": "/iPortFolio/static/media/alembicaustralia.6e1b5e776743d4f454ef.png",
+    "static/media/mastercoin.png": "/iPortFolio/static/media/mastercoin.52758b4ab6e572bf5401.png",
+    "static/media/wimetlab.png": "/iPortFolio/static/media/wimetlab.a97856b1e4c004ae2993.png",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/iPortFolio/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/fontawesome-webfont.eot": "/iPortFolio/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/iPortFolio/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/project1.png": "/iPortFolio/static/media/project1.c84a46c26ddc0831c611.png",
+    "static/media/project3.png": "/iPortFolio/static/media/project3.2403e42c7231746c7c0e.png",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/iPortFolio/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/AsishJena.pdf": "/iPortFolio/static/media/AsishJena.01668e9b7d0ab844a82c.pdf",
+    "static/media/project2.png": "/iPortFolio/static/media/project2.7cac1ea534b9a98ac770.png",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/iPortFolio/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "static/media/jsprojects.png": "/iPortFolio/static/media/jsprojects.69d8a7d905bd4c337471.png",
+    "static/media/github.png": "/iPortFolio/static/media/github.22cfdd1cba253783ce51.png",
+    "static/media/instagram.png": "/iPortFolio/static/media/instagram.81d74f5b76e85ca7cd6a.png",
+    "index.html": "/iPortFolio/index.html",
+    "main.38e6bfa5.css.map": "/iPortFolio/static/css/main.38e6bfa5.css.map",
+    "main.7120bbae.js.map": "/iPortFolio/static/js/main.7120bbae.js.map",
+    "787.ca84a7e5.chunk.js.map": "/iPortFolio/static/js/787.ca84a7e5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.38e6bfa5.css",
+    "static/js/main.7120bbae.js"
+  ]
+}
