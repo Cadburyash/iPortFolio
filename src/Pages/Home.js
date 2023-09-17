@@ -23,7 +23,7 @@ const Home = () => {
               />
               <div className="socialmedia">
                 <a
-                  href="https://www.linkedin.com/in/cadburyash/"
+                  href="https://www.linkedin.com/in/asish-jena222522/"
                   target="_blank"
                   rel="noreferrer"
                 >
