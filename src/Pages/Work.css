@@ -1,9 +1,9 @@
 #work {
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 80px 0;
+  min-height: 100vh;
 }
 #work h5 {
   margin-bottom: 10px;
@@ -20,21 +20,9 @@
 #work h6.position {
   margin-top: -7px;
 }
-#work h6.location {
-  color: #555;
-  font-size: 0.85rem;
-  font-weight: 400;
-}
-#work .workhighlights {
-  margin: 14px 0 0;
-  padding-left: 20px;
-}
-#work .workhighlights li {
-  margin-bottom: 10px;
-}
 @media (max-width: 767px) {
   #work {
-    padding: 150px 30px 60px;
+    padding-top: 150px;
   }
   #work h2 {
     margin-bottom: 0px !important;
