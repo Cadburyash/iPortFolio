@@ -22,7 +22,12 @@ const Work = () => {
                       <h6 className="position">
                         <i>{item.position}</i>
                       </h6>
-                      <h6>{item.desc}</h6>
+                      <h6 className="location">{item.location}</h6>
+                      <ul className="workhighlights">
+                        {item.highlights.map((highlight) => (
+                          <li key={highlight}>{highlight}</li>
+                        ))}
+                      </ul>
                     </div>
                   </div>
                 </div>
