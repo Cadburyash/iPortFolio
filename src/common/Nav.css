@@ -1,7 +1,9 @@
 #navigation img {
   width: 25px;
   filter: grayscale(1) invert(1);
+  transition: transform 0.3s ease;
 }
+
 #navigation {
   height: 100vh;
   background: #000;
@@ -12,63 +14,91 @@
   justify-content: center;
   align-items: center;
   position: fixed;
-  z-index: 2;
+  z-index: 999;
 }
-#navigation p {
-  font-size: 12px;
-  padding: 20px 10px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  text-transform: uppercase;
-}
+
 #navigation ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
+
 #navigation ul li {
   margin-bottom: 40px;
 }
+
+#navigation ul a {
+  text-decoration: none;
+}
+
+#navigation ul li:hover img {
+  transform: scale(1.15);
+}
+
 #navigation-mob {
   display: none;
 }
-@media (max-width: 767px) {
+
+/* Mobile */
+@media (max-width: 991px) {
   #navigation {
     display: none;
   }
+
   #navigation-mob {
-    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     background: #000;
     height: 60px;
-    z-index: 999;
-    display: initial;
+    z-index: 9999;
+    display: block;
   }
-  #home .imgsec .bgblack {
-    display: none;
-  }
+
   #navigation-mob h1 {
     font-size: 30px !important;
     margin-top: 10px;
     margin-left: 15px;
   }
+
   #navigation-mob h1 a {
     text-decoration: none;
     color: #fff;
   }
+
+  #navigation-mob > i {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 10000;
+  }
+
   #navigation-mob ul {
     display: flex;
     flex-direction: column;
     background-color: #000;
-    height: 100vh;
+    height: calc(100vh - 60px);
+    margin: 0;
+    padding: 0;
     justify-content: center;
     align-items: center;
   }
+
   #navigation-mob ul a {
     color: #fff;
     text-decoration: none;
-    margin-bottom: 3%;
+    margin-bottom: 25px;
     font-size: 20px;
     font-weight: 600;
     font-family: "Montserrat", sans-serif;
+    transition: opacity 0.3s ease;
+  }
+
+  #navigation-mob ul a:hover {
+    opacity: 0.6;
   }
 }

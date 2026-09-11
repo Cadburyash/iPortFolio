@@ -52,7 +52,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   #about {
     padding: 0px 30px;
   }

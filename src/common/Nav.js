@@ -1,100 +1,110 @@
 import React, { useState } from "react";
 import "./Nav.css";
+
 import Home from "../assets/img/home.png";
 import About from "../assets/img/about.png";
 import Contact from "../assets/img/contact.png";
-import Projects from "../assets/img/portfolio.png";
+import Projects from "../assets/img/projects.png";
 import Services from "../assets/img/services.png";
 import Work from "../assets/img/work.png";
-import Jsprojects from "../assets/img/jsprojects.png";
+
 import { Link } from "react-router-dom";
 
 const Nav = () => {
   const [visible, setVisible] = useState(false);
 
+  const closeMenu = () => {
+    setVisible(false);
+  };
+
   return (
     <div>
+      {/* Desktop Navigation */}
       <div id="navigation">
         <ul>
           <Link to="/iPortFolio">
             <li data-aos="zoom-in">
-              <img src={Home} alt="home" />
+              <img src={Home} alt="Home" />
             </li>
           </Link>
+
           <Link to="/about">
             <li data-aos="zoom-in">
-              <img src={About} alt="about" />
+              <img src={About} alt="About" />
             </li>
           </Link>
+
           <Link to="/services">
             <li data-aos="zoom-in">
-              <img src={Services} alt="services" />
+              <img src={Services} alt="What I Do" />
             </li>
           </Link>
+
           <Link to="/work">
             <li data-aos="zoom-in">
-              <img src={Work} alt="work" />
+              <img src={Work} alt="Work" />
             </li>
           </Link>
+
           <Link to="/projects">
             <li data-aos="zoom-in">
-              <img src={Jsprojects} alt="jsprojects" />
+              <img src={Projects} alt="Projects" />
             </li>
           </Link>
-          <Link to="/portfolio">
-            <li data-aos="zoom-in">
-              <img src={Projects} alt="portfolio" />
-            </li>
-          </Link>
+
           <Link to="/contact">
             <li data-aos="zoom-in">
-              <img src={Contact} alt="contact" />
+              <img src={Contact} alt="Contact" />
             </li>
           </Link>
         </ul>
       </div>
 
+      {/* Mobile Navigation */}
       <div id="navigation-mob">
         <h1 data-aos="fade-in">
-          <Link to="/iPortFolio">Asish Jena  </Link>
+          <Link to="/iPortFolio" onClick={closeMenu}>
+            Asish Jena
+          </Link>
         </h1>
+
         <i
           data-aos="fade-in"
           className={visible ? "fa fa-close" : "fa fa-bars"}
           onClick={() => setVisible(!visible)}
         ></i>
-        {visible ? (
+
+        {visible && (
           <ul
             className="list-unstyled"
             data-aos="slide-down"
             data-aos-duration="700"
           >
-            <Link to="/iPortFolio">
+            <Link to="/iPortFolio" onClick={closeMenu}>
               <li>Home</li>
             </Link>
-            <Link to="/about">
+
+            <Link to="/about" onClick={closeMenu}>
               <li>About</li>
             </Link>
-            <Link to="/services">
+
+            <Link to="/services" onClick={closeMenu}>
               <li>What I Do</li>
             </Link>
-            <Link to="/work">
+
+            <Link to="/work" onClick={closeMenu}>
               <li>Work</li>
             </Link>
-            <Link to="/education">
-              <li>Education</li>
-            </Link>
-            <Link to="/projects">
+
+            <Link to="/projects" onClick={closeMenu}>
               <li>Projects</li>
             </Link>
-            <Link to="/portfolio">
-              <li>Portfolio</li>
-            </Link>
-            <Link to="/contact">
+
+            <Link to="/contact" onClick={closeMenu}>
               <li>Contact</li>
             </Link>
           </ul>
-        ) : null}
+        )}
       </div>
     </div>
   );

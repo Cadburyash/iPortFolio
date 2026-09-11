@@ -11,22 +11,22 @@
   },
   {
     "id": 3,
-    "servicename": "Full Stack Development",
-    "img": "fullstack.png"
+    "servicename": "System Design & Architecture",
+    "img": "system-design.png"
   },
   {
     "id": 4,
-    "servicename": "Database Development",
+    "servicename": "Database Engineering",
     "img": "database.png"
   },
   {
     "id": 5,
-    "servicename": "Authentication & Security",
-    "img": "security.png"
+    "servicename": "Microservices",
+    "img": "microservice.png"
   },
   {
     "id": 6,
-    "servicename": "Deployment & Optimization",
-    "img": "deployment.png"
+    "servicename": "Authentication & Security",
+    "img": "security.png"
   }
 ]

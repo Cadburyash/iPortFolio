@@ -1,5 +1,5 @@
 #home {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,6 +8,7 @@
 #home .rightcontent {
   padding: 40% 0px;
 }
+
 
 #home .imgsec {
   position: relative;
@@ -56,9 +57,7 @@
   width: inherit;
   bottom: -60px;
   display: flex;
-  /* background-color: #000; */
   padding: 15px 0px 10px;
-  /* border-bottom: 3px solid #000; */
   border-right: 0px;
   z-index: 999;
   border-left: 0px;
@@ -66,36 +65,32 @@
 
 #home .socialmedia::after {
   content: "";
-  /* border-bottom: 3px solid #000; */
   position: absolute;
   width: 150%;
   bottom: 0;
   right: 0;
   height: 3px;
-  /*animation: opacity 3s;*/
-  /* animation-delay: 1.5s; */
   opacity: 1;
 }
 
-/* @keyframes opacityani {
-  0% {
-    opacity: 0;
-  }
-  60% {
-    opacity: 0;
-    right: 100px;
-  }
-  100% {
-    right: 0px;
-    opacity: 1;
-  }
-} */
 #home .socialmedia img {
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   position: initial;
   margin: 0 12px;
-  /* filter: brightness(0) invert(1); */
+  transition: transform 0.3s ease;
+}
+
+#home .socialmedia a:hover img {
+  transform: translateY(-4px);
+}
+
+#home .intro {
+  max-width: 500px;
+  margin-top: 15px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
 }
 
 @keyframes beforeani {
@@ -110,35 +105,60 @@
   }
 }
 
-@media (max-width: 767px) {
-  #home .imgsec img {
-    position: initial;
-    transform: scale(1.2);
-    margin-left: -2.5%;
-  }
-
-  #home .rightcontent {
-    padding: 0px;
-    text-align: left;
-    padding-bottom: 90px;
-  }
-
+/* Mobile */
+@media (max-width: 991px) {
   #home {
-    padding-top: 80px;
-    height: initial;
-    position: initial;
+    padding: 90px 20px 60px;
+    min-height: 100vh;
+    height: auto;
+    display: block;
   }
+
+#home .imgsec {
+  position: relative;
+  text-align: center;
+  min-height: 400px;
+}
+
+#home .imgsec img {
+  position: initial;
+  transform: none;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+  #home .imgsec .bgblack {
+    display: none;
+  }
+
+#home .rightcontent {
+  padding: 30px 0 30px;
+  text-align: left;
+}
 
   #home .socialmedia {
-    bottom: -155px;
-    left: 5px;
+    position: static;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    padding: 20px 0 10px;
+  }
+
+  #home .socialmedia::after {
+    display: none;
+  }
+
+  #home .socialmedia img {
+    margin: 0 10px;
   }
 
   #home .rightcontent .btn {
-    margin-top: 30px;
+    margin-top: 20px;
   }
 
-  #home .socialmedia a {
-    margin-right: 15px;
+  #home .intro {
+    max-width: 100%;
   }
 }

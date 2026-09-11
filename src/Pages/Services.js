@@ -4,18 +4,18 @@ import services from "../Data/Services.json";
 
 import backend from "../Data/Serviceimg/backend.png";
 import api from "../Data/Serviceimg/api.png";
-import fullstack from "../Data/Serviceimg/fullstack.png";
+import systemDesign from "../Data/Serviceimg/system-design.png";
 import database from "../Data/Serviceimg/database.png";
+import microservice from "../Data/Serviceimg/microservice.png";
 import security from "../Data/Serviceimg/security.png";
-import deployment from "../Data/Serviceimg/deployment.png";
 
 const serviceImages = {
   "backend.png": backend,
   "api.png": api,
-  "fullstack.png": fullstack,
+  "system-design.png": systemDesign,
   "database.png": database,
-  "security.png": security,
-  "deployment.png": deployment
+  "microservice.png": microservice,
+  "security.png": security
 };
 
 const Services = () => {
@@ -24,16 +24,16 @@ const Services = () => {
       <div className="container">
         <div className="row">
 
-          <div className="col-sm-11 offset-sm-1">
+          <div className="col-12 col-lg-11 offset-lg-1">
             <h2 className="text-center">What I do</h2>
             <br />
           </div>
 
-          <div className="col-sm-11 offset-sm-1">
+          <div className="col-12 col-lg-11 offset-lg-1">
             <div className="row">
 
               {services.map((item) => (
-                <div className="col-sm-4" key={item.id}>
+                <div className="col-12 col-lg-4" key={item.id}>
                   <div className="servicebox" data-aos="fade-zoom-in">
 
                     <img

@@ -10,9 +10,10 @@ import Projects from "./Pages/Projects";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import React, { Route, Routes } from "react-router-dom";
+import React from "react";
+import { Route, Switch } from "react-router-dom";
 import PageNotFound from "./Pages/PageNotFound";
-import Jsprojects from "./Pages/Jsprojects";
+
 
 function App() {
   useEffect(() => {
@@ -22,22 +23,16 @@ function App() {
   return (
     <div>
       <Nav />
-      {/* <Home/>
-      <About />
-      <Services/>
-      <Work/>
-      <Contact/> */}
-      <Routes>
-        <Route exact="true" path="/iPortFolio" element={<Home />}></Route>
-        <Route path="/iPortFolio" element={<Home />}></Route>
-        <Route path="/about" element={<About />}></Route>
-        <Route path="/services" element={<Services />}></Route>
-        <Route path="/work" element={<Work />}></Route>
-        <Route path="/projects" element={<Jsprojects />}></Route>
-        <Route path="/portfolio" element={<Projects />}></Route>
-        <Route path="/contact" element={<Contact />}></Route>
-        <Route path="*" element={<PageNotFound />}></Route>
-      </Routes>
+
+      <Switch>
+        <Route exact path="/iPortFolio" component={Home} />
+        <Route path="/about" component={About} />
+        <Route path="/services" component={Services} />
+        <Route path="/work" component={Work} />
+        <Route path="/projects" component={Projects} />
+        <Route path="/contact" component={Contact} />
+        <Route component={PageNotFound} />
+      </Switch>
     </div>
   );
 }

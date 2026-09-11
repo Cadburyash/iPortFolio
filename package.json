@@ -4,18 +4,18 @@
   "homepage": "https://cadburyash.github.io/iPortFolio/",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
     "aos": "^2.3.4",
     "bootstrap": "^5.1.3",
-    "emailjs-com": "^3.2.0",
     "font-awesome": "^4.7.0",
     "react": "^17.0.2",
     "react-bootstrap": "^2.1.2",
     "react-dom": "^17.0.2",
-    "react-router-dom": "^6.2.1",
-    "react-scripts": "5.0.0",
+    "react-router-dom": "^5.3.4",
+    "react-scripts": "^5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -45,7 +45,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^3.2.3"
+    "gh-pages": "^6.3.0"
   },
   "description": "Portfolio by Asish Jena :))",
   "main": "index.js",

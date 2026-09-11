@@ -1,95 +1,81 @@
 import React from "react";
-import onelife from "../Data/Portfolioimg/1life.png";
-import alembicaustralia from "../Data/Portfolioimg/alembicaustralia.png";
-import avidorganics from "../Data/Portfolioimg/avidorganics.png";
-import baggsinc from "../Data/Portfolioimg/baggsinc.png";
-import designmaxinteriors from "../Data/Portfolioimg/designmaxinteriors.png";
-import drdharabhatt from "../Data/Portfolioimg/drdharabhatt.png";
-import mastercoin from "../Data/Portfolioimg/mastercoin.png";
-import thecafemasala from "../Data/Portfolioimg/thecafemasala.png";
-import wimetlab from "../Data/Portfolioimg/wimetlab.png";
 import "./Projects.css";
 
-const Portfolio = () => {
+const projects = [
+  {
+    id: 1,
+    title: "Custom Node.js Backend Framework",
+    description:
+      "Built a lightweight backend framework from scratch using Node.js native HTTP modules to understand the fundamentals behind frameworks like Express.",
+    highlights: [
+      "Custom routing and URL parameter handling",
+      "Asynchronous middleware pipeline using next()",
+      "Controller-based request handling",
+      "Custom JSON request body parsing",
+    ],
+    tech: "Node.js • JavaScript • Native HTTP Module",
+    github:
+      "https://github.com/Cadburyash/Node.js-Backend-Framework-from-Scratch",
+  },
+  {
+    id: 2,
+    title: "Real-Time Multithreaded Chat Application",
+    description:
+      "Built a TCP/IP client-server application for real-time communication between multiple clients over a local network.",
+    highlights: [
+      "Multithreaded client-server architecture",
+      "ExecutorService thread pool for concurrent connections",
+      "Thread-safe message persistence",
+      "SQLite-based chat history",
+    ],
+    tech: "Java • TCP/IP Sockets • SQLite • JavaFX",
+    github: "https://github.com/Cadburyash/Chat-Server",
+  },
+];
+
+const Projects = () => {
   return (
     <div id="portfolio" data-aos="fade-in">
       <div className="container">
         <div className="row">
-          <div className="col-sm-11 offset-sm-1">
-            <div className="row">
-              <div className="col-sm-12">
-                <h2>Portfolio</h2>
-                <br />
-              </div>
-              <div className="col-sm-4">
-                <div className="imgsec" data-aos="zoom-in">
-                  <img src={onelife} className="img-fluid" alt="1Life" />
+          <div className="col-12 col-lg-11 offset-lg-1">
+            <h2>Projects</h2>
+
+            <div className="projects-container">
+              {projects.map((project) => (
+                <div
+                  className="project-card"
+                  key={project.id}
+                  data-aos="zoom-in"
+                >
+                  <h3>{project.title}</h3>
+
+                  <p className="project-description">
+                    {project.description}
+                  </p>
+
+                  <h5>Key Highlights</h5>
+
+                  <ul>
+                    {project.highlights.map((highlight, index) => (
+                      <li key={index}>{highlight}</li>
+                    ))}
+                  </ul>
+
+                  <p className="project-tech">
+                    <strong>Tech:</strong> {project.tech}
+                  </p>
+
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="github-btn"
+                  >
+                    View on GitHub
+                  </a>
                 </div>
-              </div>
-              <div className="col-sm-4">
-                <div className="imgsec" data-aos="zoom-in">
-                  <img
-                    src={alembicaustralia}
-                    className="img-fluid"
-                    alt="Alembic"
-                  />
-                </div>
-              </div>
-              <div className="col-sm-4">
-                <div className="imgsec" data-aos="zoom-in">
-                  <img
-                    src={avidorganics}
-                    className="img-fluid"
-                    alt="AvidOrganics"
-                  />
-                </div>
-              </div>
-              <div className="col-sm-4">
-                <div className="imgsec" data-aos="zoom-in">
-                  <img src={baggsinc} className="img-fluid" alt="BaggsInc" />
-                </div>
-              </div>
-              <div className="col-sm-4">
-                <div className="imgsec" data-aos="zoom-in">
-                  <img
-                    src={designmaxinteriors}
-                    className="img-fluid"
-                    alt="DesignMaxInteriors"
-                  />
-                </div>
-              </div>
-              <div className="col-sm-4">
-                <div className="imgsec" data-aos="zoom-in">
-                  <img
-                    src={drdharabhatt}
-                    className="img-fluid"
-                    alt="DrDharaBhatt"
-                  />
-                </div>
-              </div>
-              <div className="col-sm-4">
-                <div className="imgsec">
-                  <img
-                    src={mastercoin}
-                    className="img-fluid"
-                    alt="Mastercoin"
-                  />
-                </div>
-              </div>
-              <div className="col-sm-4">
-                <div className="imgsec">
-                  <img
-                    src={thecafemasala}
-                    className="img-fluid"
-                    alt="TheCafeMasala"
-                  />
-                </div>
-              </div>
-              <div className="col-sm-4">
-                <div className="imgsec">
-                  <img src={wimetlab} className="img-fluid" alt="WiMetLab" />
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
@@ -98,4 +84,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default Projects;
