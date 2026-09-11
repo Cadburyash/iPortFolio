@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/iPortFolio/static/css/main.df8b75c0.css",
-    "main.js": "/iPortFolio/static/js/main.8fa6eed8.js",
+    "main.css": "/iPortFolio/static/css/main.f4c40e7c.css",
+    "main.js": "/iPortFolio/static/js/main.f2bf1eaf.js",
     "static/js/453.a09a86b2.chunk.js": "/iPortFolio/static/js/453.a09a86b2.chunk.js",
     "static/media/profileimg.png": "/iPortFolio/static/media/profileimg.ee77dbd3f62438eb109a.png",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/iPortFolio/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
@@ -18,12 +18,12 @@
     "static/media/api.png": "/iPortFolio/static/media/api.af9f16beb5af3226f35d.png",
     "static/media/system-design.png": "/iPortFolio/static/media/system-design.0e703eadecb50cabcea9.png",
     "index.html": "/iPortFolio/index.html",
-    "main.df8b75c0.css.map": "/iPortFolio/static/css/main.df8b75c0.css.map",
-    "main.8fa6eed8.js.map": "/iPortFolio/static/js/main.8fa6eed8.js.map",
+    "main.f4c40e7c.css.map": "/iPortFolio/static/css/main.f4c40e7c.css.map",
+    "main.f2bf1eaf.js.map": "/iPortFolio/static/js/main.f2bf1eaf.js.map",
     "453.a09a86b2.chunk.js.map": "/iPortFolio/static/js/453.a09a86b2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.df8b75c0.css",
-    "static/js/main.8fa6eed8.js"
+    "static/css/main.f4c40e7c.css",
+    "static/js/main.f2bf1eaf.js"
   ]
 }
