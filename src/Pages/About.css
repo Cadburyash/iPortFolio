@@ -1,6 +1,9 @@
 #about {
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
+  padding: 20px;
 }
+
 #about .aboutcontent {
   border: 2px dashed #000;
   display: flex;
@@ -36,8 +39,7 @@
 }
 @keyframes rotate {
   25% {
-    transform: rotate(90deg);
-    transform: scale(0.7);
+   transform: rotate(90deg) scale(0.7);
   }
   50% {
     transform: rotate(180deg);

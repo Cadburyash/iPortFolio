@@ -1,18 +1,32 @@
-
 [
-    {
-        "id":1,
-        "servicename":"Graphic Design",
-        "img":"https://raw.githubusercontent.com/Cadburyash/master/src/Data/Serviceimg/graphic-design.png"
-    },
-    {
-        "id":2,
-        "servicename":"Interface / Web Design",
-        "img":"https://raw.githubusercontent.com/Cadburyash/portfolio/master/src/Data/Serviceimg/web-design.png"
-    },
-    {
-        "id":3,
-        "servicename":"Web Development",
-        "img":"https://raw.githubusercontent.com/Cadburyash/portfolio/master/src/Data/Serviceimg/web-development.png"
-    }
+  {
+    "id": 1,
+    "servicename": "Backend Development",
+    "img": "backend.png"
+  },
+  {
+    "id": 2,
+    "servicename": "API Development",
+    "img": "api.png"
+  },
+  {
+    "id": 3,
+    "servicename": "Full Stack Development",
+    "img": "fullstack.png"
+  },
+  {
+    "id": 4,
+    "servicename": "Database Development",
+    "img": "database.png"
+  },
+  {
+    "id": 5,
+    "servicename": "Authentication & Security",
+    "img": "security.png"
+  },
+  {
+    "id": 6,
+    "servicename": "Deployment & Optimization",
+    "img": "deployment.png"
+  }
 ]
