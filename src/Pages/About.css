@@ -1,32 +1,18 @@
 #about {
-  min-height: 100vh;
+  height: 100vh;
 }
 #about .aboutcontent {
   border: 2px dashed #000;
   display: flex;
-  align-items: stretch;
-  margin: 120px 0 60px;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  margin-top: 20vh;
   flex-direction: column;
-  text-align: left;
-  padding: 36px;
+  text-align: center;
+  padding: 20px;
   position: relative;
   background-color: #fff;
-}
-#about .aboutcontent h2 {
-  text-align: center;
-  margin-bottom: 24px;
-}
-#about .aboutcontent h3 {
-  font-size: 1.05rem;
-  margin: 20px 0 6px;
-}
-#about .aboutcontent p {
-  margin-bottom: 10px;
-}
-#about .aboutskills {
-  border-top: 1px solid #000;
-  margin-top: 12px;
-  padding-top: 12px;
 }
 #about .aboutcontent::before {
   content: "";
@@ -67,9 +53,5 @@
 @media (max-width: 767px) {
   #about {
     padding: 0px 30px;
-  }
-  #about .aboutcontent {
-    margin-top: 100px;
-    padding: 28px 20px;
   }
 }
