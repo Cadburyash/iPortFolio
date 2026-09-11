@@ -11,9 +11,8 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import React from "react";
-import { Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 import PageNotFound from "./Pages/PageNotFound";
-
 
 function App() {
   useEffect(() => {
@@ -21,19 +20,21 @@ function App() {
   }, []);
 
   return (
-    <div>
-      <Nav />
+    <HashRouter>
+      <div>
+        <Nav />
 
-      <Switch>
-        <Route exact path="/iPortFolio" component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/services" component={Services} />
-        <Route path="/work" component={Work} />
-        <Route path="/projects" component={Projects} />
-        <Route path="/contact" component={Contact} />
-        <Route component={PageNotFound} />
-      </Switch>
-    </div>
+        <Switch>
+          <Route exact path="/iPortFolio" component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/services" component={Services} />
+          <Route path="/work" component={Work} />
+          <Route path="/projects" component={Projects} />
+          <Route path="/contact" component={Contact} />
+          <Route component={PageNotFound} />
+        </Switch>
+      </div>
+    </HashRouter>
   );
 }
 
