@@ -1,10 +1,39 @@
 [
-    {
-        "id":1,
-        "year":"Aug, 2022 - Apr, 2023",
-        "companyname":"CVS-Health",
-        "position":"Angular Developer",
-        "desc":"- Angular, Javascript, Sass, Photoshop,\n Increase performance & speed of the website \n - SEO and Rankings"
-    }
-
+  {
+    "id": 1,
+    "year": "Jun 2025 – Aug 2026",
+    "companyname": "Concentrix",
+    "position": "Technical Support Engineer (Backend Focus)",
+    "location": "Bengaluru, Karnataka, India · On-site",
+    "highlights": [
+      "Improved localized Java automation utilities to parse internal support diagnostics, cutting case processing times by 16%.",
+      "Analyzed iOS system crash logs and console errors to isolate server-side synchronization faults, reducing resolution latency by 20%.",
+      "Partnered with core backend engineering squads by lodging technical data tracking logs to accelerate critical software patch deployments by 12%."
+    ]
+  },
+  {
+    "id": 2,
+    "year": "Sep 2023 – Mar 2025",
+    "companyname": "[247].ai",
+    "position": "Digital Advisor & Backend Developer",
+    "location": "Bangalore Urban, Karnataka, India · On-site",
+    "highlights": [
+      "Developed custom Java utility tools that automated agent workflow actions, reducing average chat handling time by 14%.",
+      "Optimized complex SQL queries to audit chat transaction logs, identifying data sync bottlenecks and improving backend system reliability by 18%.",
+      "Diagnosed and resolved REST API integration errors between the chat platform and inventory databases, cutting system-related cart abandonment by 8%."
+    ]
+  },
+  {
+    "id": 3,
+    "year": "Aug 2022 – Jul 2023",
+    "companyname": "CVS Health",
+    "position": "Software Engineer – Frontend (Healthcare Applications)",
+    "location": "Massachusetts, United States · Remote",
+    "highlights": [
+      "Developed reusable Angular and TypeScript components, accelerating pharmacy dashboard load speeds by 22%.",
+      "Engineered frontend data models to dynamically render prescription histories, cutting latency by 18%.",
+      "Implemented UI data-masking algorithms to guarantee 100% HIPAA compliance for protected health information.",
+      "Integrated complex backend REST APIs to ensure seamless asynchronous data sync across the UI."
+    ]
+  }
 ]
