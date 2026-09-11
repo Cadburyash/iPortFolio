@@ -1,19 +1,21 @@
 import "./App.css";
-import Nav from "./common/Nav";
-import Home from "./Pages/Home";
 import "./common/Commoncss.css";
+
+import React, { useEffect } from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+
+import Aos from "aos";
+import "aos/dist/aos.css";
+
+import Nav from "./common/Nav";
+
+import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Services from "./Pages/Services";
 import Work from "./Pages/Work";
-import Contact from "./Pages/Contact";
 import Projects from "./Pages/Projects";
-import Aos from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
-import React from "react";
-import { Route, Switch } from "react-router-dom";
+import Contact from "./Pages/Contact";
 import PageNotFound from "./Pages/PageNotFound";
-
 
 function App() {
   useEffect(() => {
@@ -21,19 +23,21 @@ function App() {
   }, []);
 
   return (
-    <div>
-      <Nav />
+    <BrowserRouter basename="/iPortFolio">
+      <div>
+        <Nav />
 
-      <Switch>
-        <Route exact path="/iPortFolio" component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/services" component={Services} />
-        <Route path="/work" component={Work} />
-        <Route path="/projects" component={Projects} />
-        <Route path="/contact" component={Contact} />
-        <Route component={PageNotFound} />
-      </Switch>
-    </div>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/services" component={Services} />
+          <Route path="/work" component={Work} />
+          <Route path="/projects" component={Projects} />
+          <Route path="/contact" component={Contact} />
+          <Route component={PageNotFound} />
+        </Switch>
+      </div>
+    </BrowserRouter>
   );
 }
 

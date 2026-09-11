@@ -22,7 +22,7 @@ const Nav = () => {
       {/* Desktop Navigation */}
       <div id="navigation">
         <ul>
-          <Link to="/iPortFolio">
+          <Link to="/">
             <li data-aos="zoom-in">
               <img src={Home} alt="Home" />
             </li>
@@ -63,7 +63,7 @@ const Nav = () => {
       {/* Mobile Navigation */}
       <div id="navigation-mob">
         <h1 data-aos="fade-in">
-          <Link to="/iPortFolio" onClick={closeMenu}>
+          <Link to="/" onClick={closeMenu}>
             Asish Jena
           </Link>
         </h1>
@@ -80,7 +80,7 @@ const Nav = () => {
             data-aos="slide-down"
             data-aos-duration="700"
           >
-            <Link to="/iPortFolio" onClick={closeMenu}>
+            <Link to="/" onClick={closeMenu}>
               <li>Home</li>
             </Link>
 
